@@ -11,8 +11,8 @@ with codecs.open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 setup(
-    author='Ming Chen',
-    author_email='mockey.chen@gmail.com',
+    author='Jonie Dicon',
+    author_email='jonie@ingenuity.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
@@ -31,14 +31,13 @@ setup(
     long_description=readme,
     name='django-cas-ng',
     packages=['django_cas_ng', 'django_cas_ng.management', 'django_cas_ng.management.commands'],
-    package_data = {
-        'django_cas_ng': ['locale/*/LC_MESSAGES/*',],
+    package_data={
+        'django_cas_ng': ['locale/*/LC_MESSAGES/*', ],
     },
-    url='https://github.com/mingchen/django-cas-ng',
-    #bugtrack_url='https://github.com/mingchen/django-cas-ng/issues',  # not support this key
-    download_url ='https://github.com/mingchen/django-cas-ng/releases',
-    version='3.5.1',
-    install_requires=['Django >= 1.5'],
+    url='https://github.com/jonie-ingenuity/django-cas-ng',
+    # bugtrack_url='https://github.com/mingchen/django-cas-ng/issues',  # not support this key
+    download_url='https://github.com/jonie-ingenuity/django-cas-ng/releases',
+    version='3.5.1-patch',
+    install_requires=['Django >= 1.4'],
     zip_safe=False,  # dot not package as egg or django will not found management commands
 )
-
